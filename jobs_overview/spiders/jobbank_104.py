@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import requests
 from scrapy.spider import BaseSpider
-from JobsOverviewCrawler.items import JobsoverviewcrawlerItem
+from jobs_overview.items import JobsOverviewItem
 import re
 import datetime
 
@@ -17,11 +17,11 @@ class Spider104(BaseSpider):
     
     def parse(self, response):
         res = json.loads(response.body_as_unicode())
-        jobItems = []#JobsoverviewcrawlerItem()
+        jobItems = []#JobsOverviewItem()
         #[items['custName'] for items in res['data']['list']]
         
         for items in res['data']['list']:
-            jobItem = JobsoverviewcrawlerItem()
+            jobItem = JobsOverviewItem()
             jobItem['title'] = items['jobName']
             jobItem['address'] = items['jobAddress']
             jobItem['description'] = items['description']

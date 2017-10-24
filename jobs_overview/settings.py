@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for JobsOverviewCrawler project
+# Scrapy settings for jobs_overview project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #     http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'JobsOverviewCrawler'
+BOT_NAME = 'jobs_overview'
 
-SPIDER_MODULES = ['JobsOverviewCrawler.spiders']
-NEWSPIDER_MODULE = 'JobsOverviewCrawler.spiders'
+SPIDER_MODULES = ['jobs_overview.spiders']
+NEWSPIDER_MODULE = 'jobs_overview.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'JobsOverviewCrawler (+http://www.yourdomain.com)'
+#USER_AGENT = 'jobs_overview (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'JobsOverviewCrawler.middlewares.JobsoverviewcrawlerSpiderMiddleware': 543,
+#    'jobs_overview.middlewares.JobsOverviewSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'JobsOverviewCrawler.middlewares.MyCustomDownloaderMiddleware': 543,
+#    'jobs_overview.middlewares.MyCustomDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'JobsOverviewCrawler.pipelines.JobsoverviewcrawlerPipeline': 300,
+#    'jobs_overview.pipelines.JobsOverviewPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
