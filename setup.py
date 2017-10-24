@@ -6,5 +6,5 @@ setup(
     name         = 'project',
     version      = '1.0',
     packages     = find_packages(),
-    entry_points = {'scrapy': ['settings = jobs_overview.settings']},
+    entry_points = {'scrapy': ['settings = JobsOverviewCrawler.settings']},
 )

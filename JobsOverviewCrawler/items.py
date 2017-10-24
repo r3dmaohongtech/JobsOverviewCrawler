@@ -8,9 +8,10 @@
 import scrapy
 
 
-class JobsOverviewItem(scrapy.Item):
+class JobsoverviewcrawlerItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    #pass
     title = scrapy.Field()
     address = scrapy.Field()
     description = scrapy.Field()
@@ -24,4 +25,3 @@ class JobsOverviewItem(scrapy.Item):
     link = scrapy.Field()
     others = scrapy.Field()
     datetime = scrapy.Field()
-
